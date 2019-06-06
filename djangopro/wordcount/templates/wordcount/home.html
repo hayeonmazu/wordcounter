@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>워드카운터 홈에 오신것을 환영합니다!</title>
+<style>
+    body{
+        background-color: beige;
+    }
+    h1,p{
+        font-family: 'KimNamyun'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KimNamyun.woff') format('woff'); font-weight: normal; font-style: normal; 
+        
+    }
+    h1{
+        color: orangered;
+    }
+</style>   
+</head>
+<body>
+    
+<h1>워드카운터를 만들어봅시다.</h1>
+
+<a href="{% url 'about' %}">About</a>
+
+<form action="{% url 'count' %}">
+    <textarea cols="100" rows="=300" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+<p></p>
+<p>워드카운터 사용하는 방법</p>
+<p>자기소개서를 사용 할 때 같은 말을 반복하는 것을 싫어하는 추세이죠? 워드카운터를 이용해! 같은말 사용을 줄여보세요!!</p>
+<p>자신이 적은 글을 워드카운터 안에 넣고 카운트 버튼을 하면 어떤 단어를 몇번 말했는지를 보실 수 있습니다.</p>
+<p></p>
+<p></p>
+<a href="https://www.naver.com/" target="_blank"><img src="http://blogfiles.naver.net/20151021_61/gonggamcom_14454090756396FPUJ_JPEG/%C4%B8%C3%B3.JPG" height="100" width="200" ></a>
+<a href="https://www.naver.com/" target="_blank"><img src="https://search4.kakaocdn.net/argon/0x200_85_hr/2cs1ZY4f3Gt" height="100" width="200"></a>
+<a href="https://class.likelion.org/board/notices/" target="_blank"><img src="http://blogfiles.naver.net/20121209_215/yangyang51_1355063923684Q4rbb_JPEG/%BE%C6%C4%A7%C7%DE%BB%EC%C0%BB%B9%DE%B0%ED%BB%F5%B3%A2%B5%E9%B3%A2%B8%AE%BC%AD%B7%CE%C0%E5%B3%AD%C0%BB%C4%A1%B8%E9%BC%AD%B3%EE%B0%ED%C0%D6%BD%C0%B4%CF%B4%D9.jpg" height="100" width="200"></a>
+
+</body>
+</html>
